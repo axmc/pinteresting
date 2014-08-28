@@ -10,7 +10,7 @@ gem 'bootstrap-sass'# Build JSON APIs with ease. Read more: https://github.com/r
 gem 'jbuilder', '~> 2.0'# bundle exec rake doc:rails generates the API under doc/api.
 
 gem 'spring'
-gem 'devise' '3.3.0'
+gem 'devise','3.3.0'
 
 group :development, :test do
 		gem 'sqlite3'
