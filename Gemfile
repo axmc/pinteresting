@@ -16,7 +16,7 @@ group :development, :test do
 end
 
 group :doc do
-		gem 'sdoc', '~> 0.4.0' require: false
+		gem 'sdoc', require: false
 end
 
 group :production do   #adds PostgresSQL for Heroku
