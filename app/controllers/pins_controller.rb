@@ -48,13 +48,12 @@ class PinsController < ApplicationController
       redirect_to pins_url, notice: 'Pin was successfully destroyed.' 
   end
 
-  privates
-# Use callbacks to share common setup or constraints between actions.
+  private
     def set_pin
       @pin = Pin.find(params[:id])
     end
 
-   # Never trust parameters from the scary internet, only allow the white list through.
+   
     def pin_params
       params.require(:pin).permit(:description)
     end
