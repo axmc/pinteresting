@@ -1,7 +1,7 @@
 Pinteresting::Application.routes.draw do
   devise_for :users
-  root "pages#home" #creates root_path
-    get "about" => "pages#about"  # creates about_path
+  root "pages#home" #creates root_path pages controller home action
+    get "about" => "pages#about"  # creates about_path pages controller about action
 
 
   # The priority is based upon order of creation: first created -> highest priority.
