@@ -11,6 +11,7 @@ gem 'jbuilder', '~> 2.0'# bundle exec rake doc:rails generates the API under doc
 
 gem 'spring'
 gem 'devise','3.3.0'
+gem 'paperclip', github: 'thoughtbot/paperclip'
 
 group :development, :test do
 		gem 'sqlite3'
