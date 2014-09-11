@@ -83,4 +83,15 @@ Rails.application.configure do
   #required for Heroku
   config.action_mailer.default_url_options = { :host => 'omrails-standup-pinteresting.herokuapps.com' } 
 
+  # Sets Paperclip to upload images to S3 when published on Heroku. Use Heroku command line to set
+  # ENV variables so credentials are not exposed in GitHub code
+  # config/environments/production.rb
+  config.paperclip_defaults = {
+    :storage => :s3,
+    :s3_credentials => {
+      :bucket => ENV['AWS_BUCKET'],
+      :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
+      :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
+    }
+  }
 end
