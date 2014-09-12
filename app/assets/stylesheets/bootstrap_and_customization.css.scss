@@ -13,6 +13,9 @@ $navbar-default-brand-color:	#0c392b;
 $brand-primary: #c0392b;
 $jumbotron-bg: white;
 
+/* this from the forums to correct display of icons  Day 28 */
+$icon-font-path: 'bootstrap/'; @import 'bootstrap';
+
 @import 'bootstrap';
 
 .center {
